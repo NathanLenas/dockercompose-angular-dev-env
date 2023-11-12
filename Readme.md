@@ -1,7 +1,7 @@
 
 # Angular Dev environment created with docker-compose
 
-
+Make sure you clone the submodules when cloning the repository (git clone --recurse-submodules git@github.com:NathanLenas/dockercompose-angular-dev-env.git)
 
 ## Dev environment:
 

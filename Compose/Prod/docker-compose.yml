@@ -1,0 +1,24 @@
+version: "2"
+
+services:
+  mongo-db:
+    image: mongo
+    container_name: mongo
+    restart: unless-stopped
+    network_mode: host
+
+  node-express:
+    image: node:latest
+    container_name: node-express
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - ../../Project/angular-15-node-js-mongodb-example/node-express-server:/app
+    command: node server.js
+    network_mode: host
+
+  angular-client:
+    image: angularprod:latest
+    container_name: angular-client
+    restart: unless-stopped
+    network_mode: host

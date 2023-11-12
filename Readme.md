@@ -32,9 +32,6 @@ cat  ~/.config/code-server/config.yaml
 
 ```
 
-  
-
---- Start debug environment :
 
 Inside the vscode editor, to setup the node-express server, open the terminal and run:
 

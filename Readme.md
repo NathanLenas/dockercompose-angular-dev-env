@@ -37,8 +37,8 @@ Inside the vscode editor, to setup the node-express server, open the terminal an
 
 ```bash
 
-cd  project/angular-15-node-js-mongodb-example/node-express-server
-
+cd  project/angular-15-node-js-mongodb/node-express-server
+npm install
 node  server.js
 
 ```
@@ -49,9 +49,9 @@ Now to start the angular app, open another terminal and run:
 
 ```bash
 
-cd  project/angular-15-node-js-mongodb-example/angular-15-client
-
-ng  serve
+cd project/angular-15-node-js-mongodb/angular-15-client
+npm install
+ng serve
 
 ```
 
@@ -79,7 +79,7 @@ nginx server, Node express server, mongo
 
 Some modifications are needed to make it work:
 
-In the Project/angular-15-node-js-mongodb-example/angular-15-client/src/app/services/tutorial.service.ts file, change the url from 
+In the Project/angular-15-node-js-mongodb/angular-15-client/src/app/services/tutorial.service.ts file, change the url from 
 ```javascript
 const baseUrl = 'http://localhost:8080/proxy/8081/api/tutorials'; 
 ``` 
@@ -101,7 +101,7 @@ Remove --serve-path=/proxy/4200/ from the ng serve configuration in the package.
 
 Then refresh the docker image:
 
-go to Project/angular-15-node-js-mongodb-example/angular-15-client and run:
+go to Project/angular-15-node-js-mongodb/angular-15-client and run:
 
 ```bash
 

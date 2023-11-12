@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     working_dir: /app
     volumes:
-      - ../../Project/angular-15-node-js-mongodb-example/node-express-server:/app
+      - ../../Project/angular-15-node-js-mongodb/node-express-server:/app
     command: node server.js
     network_mode: host
 

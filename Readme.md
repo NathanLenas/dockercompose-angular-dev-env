@@ -11,7 +11,7 @@ This environment contains an online vscode version, and a mongo container
 
 To start dev environment:
 
-Go to ./Compose/Dev and run:
+Go to Compose/Dev and run:
 
 ```bash
 
@@ -37,7 +37,7 @@ Inside the vscode editor, to setup the node-express server, open the terminal an
 
 ```bash
 
-cd  Project/angular-15-node-js-mongodb-example/node-express-server
+cd  project/angular-15-node-js-mongodb-example/node-express-server
 
 node  server.js
 
@@ -79,7 +79,10 @@ nginx server, Node express server, mongo
 
 Some modifications are needed to make it work:
 
-In the Project/angular-15-node-js-mongodb-example/angular-15-client/src/app/services/tutorial.service.ts file, change the url to:
+In the Project/angular-15-node-js-mongodb-example/angular-15-client/src/app/services/tutorial.service.ts file, change the url from 
+```javascript
+const baseUrl = 'http://localhost:8080/proxy/8081/api/tutorials'; ``` 
+to:
 
 ```javascript
 

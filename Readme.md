@@ -81,7 +81,8 @@ Some modifications are needed to make it work:
 
 In the Project/angular-15-node-js-mongodb-example/angular-15-client/src/app/services/tutorial.service.ts file, change the url from 
 ```javascript
-const baseUrl = 'http://localhost:8080/proxy/8081/api/tutorials'; ``` 
+const baseUrl = 'http://localhost:8080/proxy/8081/api/tutorials'; 
+``` 
 to:
 
 ```javascript

@@ -3,7 +3,7 @@
 
 Make sure you clone the submodules when cloning the repository 
 ```bash
-git clone --recurse-submodules git@github.com:NathanLenas/dockercompose-angular-dev-env.git
+git clone --recurse-submodules https://github.com/NathanLenas/dockercompose-angular-dev-env.git
 ```
 
 ## Dev environment:
